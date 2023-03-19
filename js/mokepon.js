@@ -20,4 +20,4 @@ function seleccionarMascotaJugador(){
 
 }
 
-window.addEventListener('load',iniciarJuego)
+window.addEventListener('load',iniciarJuego)                                                                
