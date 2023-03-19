@@ -9,7 +9,7 @@ function seleccionarMascotaJugador(){
     let inputRatigueya=document.getElementById('ratigueya')
 
     if (inputHipodoge.checked){
-        alert('Seleccionaste Hipodoge')
+        alert('Seleccionaste Hipodoge ahora a jugar')
     }else if(inputCapipepo.checked){
         alert('Seleccionaste Capipepo')
     }else if(inputRatigueya.checked){
