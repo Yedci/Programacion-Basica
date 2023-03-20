@@ -1,4 +1,4 @@
-let ataqueJugador
+let ataqueJugador // es una variable global
 
 
 
