@@ -16,6 +16,9 @@ function iniciarJuego(){
     botonAgua.addEventListener('click', ataqueAgua)
     let botonTierra=document.getElementById('boton-tierra')
     botonTierra.addEventListener('click', ataqueTierra)
+
+    let botonReiniciar = document.getElementById("boton-reiniciar")
+    botonReiniciar.addEventListener('click', reiniciarJuego)
 }
 
 function seleccionarMascotaJugador(){
@@ -124,6 +127,9 @@ function crearMensajeFinal(resultadoFinal){
 
     sectionMensajes.appendChild(parrafo)
 
+}
+function reiniciarJuego(){
+    location.reload()
 }
 
 function aleatorio(min, max){
