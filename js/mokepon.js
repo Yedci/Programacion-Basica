@@ -39,12 +39,12 @@ function seleccionarMascotaJugador(){
     sectionSeleccionarAtaque.style.display='block'
 
     
-
+//Creamos unas variables para despues preguntarlas en la validacion. 
     let inputHipodoge=document.getElementById('hipodoge')
     let inputCapipepo=document.getElementById('capipepo')
     let inputRatigueya=document.getElementById('ratigueya')
     let spanMascotaJugador=document.getElementById('mascota-jugador')
-
+// mas facil para leer. leemos la funcion para validar si el checked es true si esto es verdadero se da la alerta de la mascota seleccionada.
     if (inputHipodoge.checked){
         spanMascotaJugador.innerHTML="Hipodoge"
     }else if(inputCapipepo.checked){
