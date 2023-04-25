@@ -1,26 +1,15 @@
 .titulo{
     color:rgb(107, 4, 76);
-    width: 350;
-    height: 81;
-    background-color: goldenrod;
+    text-align: center;
+    width: 310px;
+    height: 50px;
+    background-color:burlywood;
 }
-label{
-    background-color: aquamarine;
-    width: 350;
-    height: 81;
-
-}
-
-input{
-    background-color:magenta;
-    width: 310;
-    height: 50;
-
-}
-button{
-    background-color: royalblue;
-    width: 350;
-    height: 81;
-
-
+#seleccionar-mascota{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
