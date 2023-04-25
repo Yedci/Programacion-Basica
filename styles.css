@@ -4,3 +4,23 @@
     height: 81;
     background-color: goldenrod;
 }
+label{
+    background-color: aquamarine;
+    width: 350;
+    height: 81;
+
+}
+
+input{
+    background-color:magenta;
+    width: 310;
+    height: 50;
+
+}
+button{
+    background-color: royalblue;
+    width: 350;
+    height: 81;
+
+
+}
