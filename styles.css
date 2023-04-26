@@ -1,15 +1,22 @@
-.fondo{
-    background-color:mediumspringgreen;
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body{
+    font-family: 'Sigmar', cursive;
+    background-color: #0A4D68;
+
 }
+
 .titulo{
-    color:currentcolor;
+    color:white;
     text-align: center;
-    width: 310px;
-    height: 50px;
-    background-color:aliceblue;
+    font-size: 38px;
+    
+
 }
 .titulo2{
-    font-family: cursive;
+    font-family: 'Sigmar', cursive;
+    color: white;
+    font-size:30px ;
 
 }
 #seleccionar-mascota{
@@ -19,21 +26,37 @@
     align-items: center;
     justify-content: center;
 }
+.tarjetas{
+    display: flex;
+    gap:10px;
+
+}
 .tarjeta-de-mokepon{
-    font-family: cursive;
-    width: 95px;
-    height: 50px;
-    background: lavenderblush;
+    display: flex;
+    font-family: 'Sigmar', cursive;
+    color: white;
+    width: 141px;
+    height: 130px;
+    background: #05BFDB;
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
     border: 1px solid fuchsia;
+    border-radius: 20px;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center}
+.tarjeta-de-mokepon img
+{
+    width:80px;
 }
 .bseleccionar-mascota{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Sigmar', cursive;
     margin: 1px;
     width: 180px;
     height: 70px;
-    background: lavender;
-    border: 1px solid fuchsia
+    background: #00FFCA;
+    border: 1px solid fuchsia;
+    border-radius:20px;
 }
