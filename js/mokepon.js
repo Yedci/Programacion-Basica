@@ -88,7 +88,7 @@ function ataqueAleatorioEnemigo(){
     if(ataqueAleatorio ==1){
         ataqueEnemigo = 'FUEGO'
     }else if (ataqueAleatorio ==2){
-        ataqueEnemigo= 'AGUA'
+        ataqueEnemigo = 'AGUA'
     }else{
         ataqueEnemigo ='TIERRA'
     }
@@ -130,20 +130,34 @@ function revisarVidas(){
 }
 
 function crearMensaje(resultado){
-    let sectionMensajes = document.getElementById("mensajes")
+    // se crean las variables para mostrar los mensajes de los resultado de los ataques.
+    let sectionMensajes = document.getElementById("resultado")
+    let ataquesDelJugador = document.getElementById("ataques-del-jugador")
+    let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo")
 
-    let parrafo =document.createElement('p')
-    parrafo.innerHTML= 'Tú mascota atacó con: '  + ataqueJugador  + ',' + ' la mascota del enemigo ataco con: ' + ataqueEnemigo  + '-' + resultado
 
-    sectionMensajes.appendChild(parrafo)
+// ahora se crean los parrafos para las variables creadas en la funcion crearMensajelet 
+
+let nuevoAtaqueDelJugador = document.createElement('p')
+let nuevoAtaqueDelEnemigo = document.createElement('p')
+
+//añadimos los parrafos a los elementos html
+sectionMensajes.innerHTML=resultado
+nuevoAtaqueDelJugador.innerHTML = ataqueJugador
+nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo
+
+ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
+ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
+
+    /*let parrafo =document.createElement('p')
+    parrafo.innerHTML= 'Tú mascota atacó con: '  + ataqueJugador  + ',' + ' la mascota del enemigo ataco con: ' + ataqueEnemigo  + '-' + resultado */
+
     }
 function crearMensajeFinal(resultadoFinal){
-    let sectionMensajes = document.getElementById("mensajes")
+    let sectionMensajes = document.getElementById("resultado")
 
-    let parrafo =document.createElement('p')
-    parrafo.innerHTML=resultadoFinal
-
-    sectionMensajes.appendChild(parrafo)
+    
+    sectionMensajes.innerHTML=resultadoFinal
 
     let botonFuego=document.getElementById('boton-fuego')
     botonFuego.disabled=true
