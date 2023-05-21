@@ -105,3 +105,16 @@ input {
     font-family: 'Poppins', sans-serif;
 
 }
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    border: 10px;
+    background:#19A7CE;
+    margin-right: 15px;
+    column-width: auto;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+
+
+}
